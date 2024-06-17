@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/header'); -%>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Watch Store</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/watch-styles.css" rel="stylesheet" /> <!-- Include new stylesheet -->
+    </head>
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <h1>Our Watches</h1>
+        <div class="container">
+            <div class="watch-card">
+                <img src="assets\img\watch1.jpg" alt="Watch 1">
+                <div class="watch-card-body">
+                    <h2 class="watch-card-title">Watch Model 1</h2>
+                    <p class="watch-card-description">Elegant and stylish watch for all occasions.</p>
+                    <p class="watch-card-price">$299.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="watch-card">
+                <img src="assets\img\watch2.jpg" alt="Watch 2">
+                <div class="watch-card-body">
+                    <h2 class="watch-card-title">Watch Model 2</h2>
+                    <p class="watch-card-description">Classic watch with leather strap.</p>
+                    <p class="watch-card-price">$349.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Repeat for more watch cards -->
+        </div>
+        <!-- Scripts-->
+        <%- include('layouts/footer'); -%>
+        <%- include('layouts/scripts'); -%>
+    </body>
+</html>

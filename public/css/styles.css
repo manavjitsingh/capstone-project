@@ -1,0 +1,220 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333; /* General text color */
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 300px; /* Increase max-height for better visuals */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Slightly lighter label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    padding: 10px; /* Added padding for better input styling */
+}
+
+.gbutton, button {
+    padding: 12px 24px;
+    background-color: #333; /* Darker color for elegance */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Adjusted width */
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto; /* Center buttons */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px; /* Larger font size */
+    text-align: center; /* Centered header */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    padding: 10px 0; /* Padding for better spacing */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex for better alignment */
+    justify-content: flex-end;
+}
+
+li {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555; /* Hover effect */
+}
+
+/* login page */
+.login-header {
+    position: relative;
+    text-align: center;
+}
+
+.login-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.login {
+    text-align: center; /* Center the text */
+    color: #333; /* More neutral text color */
+    z-index: 1;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    border-top: 1px solid #444;
+    padding: 20px 0;
+    text-align: center;
+    color: #917c7c;
+}
+
+footer ul a {
+    color: #917c7c; /* Change the color to a lighter shade */
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    color: #ccc; /* Change the hover color to a slightly lighter shade */
+}
+
+.container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* g license */
+#licenseForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.glicense, .login, .index {
+    text-align: center;
+}
+
+.g {
+    margin-right: 20px;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 80%; /* Adjust container width for smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Decrease header font size for smaller screens */
+    }
+
+    .login-header {
+        padding-top: 50px; /* Add padding to center text vertically on smaller screens */
+    }
+
+    footer {
+        padding: 10px 0; /* Decrease footer padding for smaller screens */
+    }
+
+    footer ul a {
+        padding: 10px 15px; /* Adjust padding for footer links */
+    }
+    nav {
+        justify-content: center; /* Center the navigation items */
+    }
+
+    ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    li {
+        margin: 10px 0; /* Add space between stacked navigation items */
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%; /* Adjust container width for even smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Further decrease header font size for very small screens */
+    }
+
+    .login-header {
+        padding-top: 30px; /* Further adjust padding to center text vertically */
+    }
+    li {
+        margin: 5px 0; /* Further reduce space between stacked navigation items */
+    }
+
+    li a {
+        padding: 10px 0; /* Adjust padding of navigation items */
+    }
+}
